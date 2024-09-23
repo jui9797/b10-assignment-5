@@ -25,19 +25,20 @@ for(let singleDonationDiv of donationDivs){
         // console.log(input);
 
         //  input field value validation
-        if (donationInput.value === '' || isNaN(input) || input > Number(mainBalance.innerText)) {
-            // Clear  input field after check
+        if (donationInput.value === '' || isNaN(input) || input > Number(mainBalance.innerText) || input < 0) {
+            // Clear input field after check
             donationInput.value = '';
-              
-            return alert('Invalid input');  
+        
+            return alert('Invalid input');
         }
+        
         
         
 
         const amount =Number(donationAmount.innerText);
         // increase donation amount
         const addAmount =amount + input;
-        console.log('BDT:', addAmount);
+        // console.log('BDT:', addAmount);
         // clear input field after click
         donationInput.value = '';
         
@@ -47,7 +48,7 @@ for(let singleDonationDiv of donationDivs){
         const mainBalanceValue =Number(mainBalance.innerText);
 
         const decreseBalance =mainBalanceValue - input;
-        console.log('nav-coin balance:', decreseBalance);
+        // console.log('nav-coin balance:', decreseBalance);
         document.getElementById('nav-coin').innerText =decreseBalance;
        
 
