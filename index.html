@@ -45,15 +45,15 @@
          <!-- nav end -->
           <!-- banner start -->
            <div class="flex justify-center gap-8 mt-16 mb-8">
-            <button class="btn btn-lg">Donation</button>
-            <button class="btn btn-lg">History</button>
+            <button id="donation-btn" class="btn-large mr-8 rounded-lg border-2 border-gray-200 p-4 lg:p-6">Donation</button>
+            <button id="history-btn" class="btn-large rounded-lg border-2 border-gray-200 p-4 lg:p-6 ">History</button>
            </div>
            <!-- banner end -->
             <hr>
     </header>
     <main>
         <!-- card container -->
-         <section class="w-11/12 mx-auto">
+         <section id="card-container" class="w-11/12 mx-auto">
           <div class="grid gap-12 my-12">
             <!-- card-1 -->
              <div class="card-div grid lg:flex p-4 border-2 border-[#6a68681a] rounded-lg mb-4 gap-6">
@@ -83,8 +83,8 @@
                     <img  src="assets/coin.png" alt="coin">
                       <span class=" text-[#111111B3] bg-transparent border-none">5500</span> BDT
                 </div>
-                <h2 class="text-2xl mb-2">Donate for Flood at Noakhali, Bangladesh</h2>
-                <p class="text-[#111111B3] mb-4 lg:mb-10"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <h2 class="text-2xl mb-2">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <p class="text-[#111111B3] mb-4 lg:mb-10"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <div>
                     <input class=" border-2 border-[#b3a7a71a] w-full p-6 rounded-lg" type="text" name="number" placeholder="Write Donation Amount" >
                 </div>
@@ -101,8 +101,8 @@
                     <img  src="assets/coin.png" alt="coin">
                       <span class=" text-[#111111B3] bg-transparent border-none">5500</span> BDT
                 </div>
-                <h2 class="text-2xl mb-2">Donate for Flood at Noakhali, Bangladesh</h2>
-                <p class="text-[#111111B3] mb-4 lg:mb-10"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <h2 class="text-2xl mb-2">Aid for Injured in the Quota Movement</h2>
+                <p class="text-[#111111B3] mb-4 lg:mb-6"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <div>
                     <input class=" border-2 border-[#b3a7a71a] w-full p-6 rounded-lg" type="text" name="number" placeholder="Write Donation Amount" >
                 </div>
@@ -112,6 +112,12 @@
             
           </div>
          </section>
+
+         <!-- default hidden history section -->
+          <section id="dynamic-section" class="w-11/12 mx-auto border-2 border-gray-400 p-5 gap-4 hidden">
+            
+          <!-- dynamic div -->
+          </section> 
     </main>
     <footer>
         
