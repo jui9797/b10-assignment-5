@@ -32,7 +32,7 @@ for(let singleDonationDiv of donationDivs){
             return alert('Invalid input');
         }
         
-        
+       
         
 
         const amount =Number(donationAmount.innerText);
@@ -50,7 +50,9 @@ for(let singleDonationDiv of donationDivs){
         const decreseBalance =mainBalanceValue - input;
         // console.log('nav-coin balance:', decreseBalance);
         document.getElementById('nav-coin').innerText =decreseBalance;
-       
+        
+        // open success modal
+        my_modal_5.showModal()
 
         // set history
         const history =document.getElementById('dynamic-section').innerText;
@@ -62,7 +64,7 @@ for(let singleDonationDiv of donationDivs){
            
           `
         //   console.log(div.innerText)
-        //  set date and time
+       
           
           
          document.getElementById('dynamic-section').appendChild(div)
