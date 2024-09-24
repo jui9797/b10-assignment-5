@@ -59,7 +59,7 @@ for(let singleDonationDiv of donationDivs){
         // console.log(history)
          const div =document.createElement('div');
          div.innerHTML =`
-           <h2 class="border-2 border-gray-200 p-4 font-bold my-4 rounded-lg ">${donationAmount.innerText} ${textH2.innerText} <br> <span class="text-gray-400  mt-4">Date:
+           <h2 class="border-2 border-gray-200 p-4 font-bold my-4 rounded-lg ">${donationAmount.innerText} Taka is ${textH2.innerText} <br> <span class="text-gray-400  mt-4">Date:
            ${new Date()}</span></h2>
            
           `
